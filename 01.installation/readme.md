@@ -52,4 +52,12 @@ Press `Create a cache` button to create a new cache,
 
 We can later on select what type of caches we want to have, either `Distributed` or `Replicated`
 - Distributed caches split entries into a fixed number of segments and assign each segment to a list of owner nodes. It means that a number of copies are maintained to provide redundancy and fault tolerance, however this is typically far fewer than the number of nodes in the cluster.
-- Replicated caches do the same, with the exception that every node is an owner. It means that all nodes in a cluster hold all keys.
+- Replicated caches do the same, with the exception that every node is an owner. It means that **all** nodes in a cluster hold all keys.
+
+For this sample, we can select `Replicated` with `text/plain` encoding. Without any expiration date.
+
+We can see the end result like this,
+![balance cache](images/02.cache-balance.png)
+
+And we can start do some Cache operations after this
+![add cache content](images/03.add-cache-content.png)
