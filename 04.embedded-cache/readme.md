@@ -7,3 +7,7 @@ A simple use case to connect a Java application to a embedded infinispan cluster
 ## Simple Connection to an Embedded Infinispan with Functional Programming
 
 How to use functional approach on an embedded Infinspan
+
+## Do Queries to an Embedded Infinispan
+
+Searching for a specific value in an embedded cache
